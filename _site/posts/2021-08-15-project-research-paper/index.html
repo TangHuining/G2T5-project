@@ -2172,19 +2172,19 @@ Different lines can be identified by different colors, and the size of the line 
 <p>This part shows the daily trajectory of each employee. The drop-down menu on the left side of the interface can select the employee’s name and date. After selection, a graph of the employee’s action trajectory on the day will appear.<br />
 <img src="pic/Picture6.jpg" style="width:90.0%" /></p>
 <h3 id="creditloyalty-card-owner">4.3 Credit&amp;Loyalty Card Owner</h3>
-<p>4.3.1 Determine the GPS of the store<br />
-After many discussions, we agreed that the most effective way is to confirm the GPS of the designated store by comparing the individual’s driving trajectory on a designated number of days and the coordinates shown on the map. As shown in the figure below, the GPS data of the employee during this day showed that he stayed at about three locations outside the company. By comparing the staying location with the store location shown on the map, we can roughly get the estimated location of the store. After many comparisons, we found the home addresses of most shops and employees.<br />
+<h4 id="determine-the-gps-of-the-store">4.3.1 Determine the GPS of the store</h4>
+<p>After many discussions, we agreed that the most effective way is to confirm the GPS of the designated store by comparing the individual’s driving trajectory on a designated number of days and the coordinates shown on the map. As shown in the figure below, the GPS data of the employee during this day showed that he stayed at about three locations outside the company. By comparing the staying location with the store location shown on the map, we can roughly get the estimated location of the store. After many comparisons, we found the home addresses of most shops and employees.<br />
 <img src="pic/Picture7.png" style="width:90.0%" /></p>
-<p>4.3.2 Data Process<br />
-Because we want to explore the card number corresponding to the vehicle id, we first process the data and then make the map. First, we associate the shop gps data and the consumption data of the two cards respectively. Secondly, these data are associated with the GPS data of the vehicle and the distance is calculated. Filter the data with a distance of no more than 10m to obtain a one-to-one correspondence with the card number and employee name. We can think that the card number with the most occurrence probability is the owner’s card.</p>
-<p>4.3.3 Interface<br />
-Two parts are displayed on this interface. On the left is the membership card and credit card number used by the employee after data processing. A drop-down menu is provided on the right, and the user can select the employee’s name. After selection, a histogram of possible card numbers and corresponding times corresponding to the employee will appear.<br />
+<h4 id="data-process">4.3.2 Data Process</h4>
+<p>Because we want to explore the card number corresponding to the vehicle id, we first process the data and then make the map. First, we associate the shop gps data and the consumption data of the two cards respectively. Secondly, these data are associated with the GPS data of the vehicle and the distance is calculated. Filter the data with a distance of no more than 10m to obtain a one-to-one correspondence with the card number and employee name. We can think that the card number with the most occurrence probability is the owner’s card.</p>
+<h4 id="interface">4.3.3 Interface</h4>
+<p>Two parts are displayed on this interface. On the left is the membership card and credit card number used by the employee after data processing. A drop-down menu is provided on the right, and the user can select the employee’s name. After selection, a histogram of possible card numbers and corresponding times corresponding to the employee will appear.<br />
 <img src="pic/Picture8.png" style="width:90.0%" /></p>
 <h3 id="relationship">4.4 Relationship</h3>
-<p>4.4.1 Data Process<br />
-Because only credit card data is accurate to the minute, we only use credit card data for comparison. Correlate the consumption data of different people through locations to obtain non-personal pairs. If the difference in consumption time between two people is within ten minutes, we assume that they are related.</p>
-<p>4.4.2 Interface<br />
-A drop-down menu is provided at the top left of the interface, where you can select a person’s name. After selecting, you can see the character relationship network diagram on the right. In order to facilitate the observation of the relationship between employees, we set the nodes to different colors according to the type of employee employment. The left side contains the label of the type of color.<br />
+<h4 id="data-process-1">4.4.1 Data Process</h4>
+<p>Because only credit card data is accurate to the minute, we only use credit card data for comparison. Correlate the consumption data of different people through locations to obtain non-personal pairs. If the difference in consumption time between two people is within ten minutes, we assume that they are related.</p>
+<h4 id="interface-1">4.4.2 Interface</h4>
+<p>A drop-down menu is provided at the top left of the interface, where you can select a person’s name. After selecting, you can see the character relationship network diagram on the right. In order to facilitate the observation of the relationship between employees, we set the nodes to different colors according to the type of employee employment. The left side contains the label of the type of color.<br />
 <img src="pic/Picture9.jpg" style="width:90.0%" /></p>
 <h2 id="discussion">5. DISCUSSION</h2>
 <h3 id="the-most-popular-shops-and-periods-based-on-credit-card-and-loyalty-card-data">5.1 The most popular shops and periods based on credit card and loyalty card data</h3>
@@ -2200,7 +2200,7 @@ However, this method will have some limitations, because we use the dispatching 
 <img src="pic/Picture14.png" style="width:60.0%" /></p>
 <h3 id="potential-suspicious-location-activities-and-relationship">5.3 Potential suspicious location, activities and relationship</h3>
 <p>We can use timestamp and location indicator of transaction data to group card numbers to find out which cards are used for consumption at the same merchant at the same time.Through this result, we can utilize the result of the previous question to find the owners of the cards in a one-to-one correspondence. People in the same timestamp-location group may have had contact, which enables the police to infer potential relationships.</p>
-<p>5.3.1 Analyze suspicious stores based on heat maps</p>
+<h4 id="analyze-suspicious-stores-based-on-heat-maps">5.3.1 Analyze suspicious stores based on heat maps</h4>
 <p><img src="pic/table1.png" style="width:80.0%" /></p>
 <p>We first categorized these stores briefly, and the background colors of the categories represent whether people often visit these stores. Red is the location of the company, which is the most frequented. Orange is a store that people visit more often, and blue is a location that people visit less frequently. The grey shops are those with no signs on the map, and we have not found their exact location.<br />
 After analyzing the heat map of each store, the business hours of most stores are very regular. As shown in the figure, there is a peak at a fixed time.<br />
@@ -2208,14 +2208,14 @@ After analyzing the heat map of each store, the business hours of most stores ar
 However, some of them are open late at night. The most suspicious is the Kronos Mart.<br />
 <img src="pic/Picture16.png" style="width:60.0%" /><br />
 Most of the business hours shown in the figure are concentrated in the early morning and morning. Although the possibility that the store will be open 24 hours a day is not ruled out, there are no orders in the afternoon and evening, which are the peak hours of other stores. Overall, Kronos Mart is one of the suspected locations.</p>
-<p>5.3.2 Analyze suspicious place based on activities</p>
+<h4 id="analyze-suspicious-place-based-on-activities">5.3.2 Analyze suspicious place based on activities</h4>
 <p>After observing the staff’s daily action route, we found that most of the staff’s whereabouts are very regular during workdays, such as leaving home every morning and going for a walk in the park at night. Since most employees go to work in the morning, they usually do not go out at midnight and early morning. We have made statistics on the actions taken during these periods of time.</p>
 <p><img src="pic/table2.png" style="width:70.0%" /></p>
 <p>Based on the strange time of activities and the location where these activities happen, we found two suspicious locations with fixed locations and three locations with only latitude and longitude. We consider these five locations to be suspicious. At the same time, these employees are also somewhat suspicious.<br />
 The suspicious employees are as follow.</p>
 <p><img src="pic/table3.png" style="width:60.0%" /></p>
 <p>We could see there are totally two employment type and 4 of suspicious employees are the same type.</p>
-<p>5.3.3 Analyze suspicious relationship</p>
+<h4 id="analyze-suspicious-relationship">5.3.3 Analyze suspicious relationship</h4>
 <p>As we analyze where people live, we found some of them live together or in the same building. This is a base of further analyze. It is not strange if they usually meet.</p>
 <p><img src="pic/table4.png" style="width:60.0%" /></p>
 <p>According to the character relationship network diagram we have made, it is generally believed that if the character relationship is too complicated or there are too many contacts with people from other departments, then the character relationship can be considered as possible. Below is the character relationship diagram of five suspicious characters. We can see that their character relationships are usually very complicated. If we need to study suspicious relationships, we can first look for clues from their network of relationships.</p>
