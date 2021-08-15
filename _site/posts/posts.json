@@ -68,23 +68,6 @@
     "input_file": {}
   },
   {
-    "path": "posts/2021-08-15-project-submission-mini-challenge-2/",
-    "title": "Project Submission Mini-Challenge 2",
-    "description": "Submission for the project work for this course.",
-    "author": [
-      {
-        "name": "Wang Xiyu, Tang Huining",
-        "url": "https://scis.smu.edu.sg/"
-      }
-    ],
-    "date": "2021-08-15",
-    "categories": [],
-    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2021-08-15T00:40:21+08:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/2021-08-15-project-user-guide/",
     "title": "Project User Guide",
     "description": "A short description of the post.",
@@ -100,5 +83,22 @@
     "preview": {},
     "last_modified": "2021-08-15T00:23:16+08:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/2021-08-15-project-submission-mini-challenge-2/",
+    "title": "Project Submission Mini-Challenge 2",
+    "description": "Submission for the project work for this course.",
+    "author": [
+      {
+        "name": "Wang Xiyu Tang Huining",
+        "url": "https://scis.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-08-15",
+    "categories": [],
+    "contents": "\r\nProject Submission\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-08-15T01:39:04+08:00",
+    "input_file": "project-submission-mini-challenge-2.knit.md"
   }
 ]

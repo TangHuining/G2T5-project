@@ -3,7 +3,8 @@ title: "Project Submission Mini-Challenge 2"
 description: |
   Submission for the project work for this course.
 author:
-  - name: Wang Xiyu, Tang Huining
+  - name: Wang Xiyu,
+          Tang Huining
     url: https://scis.smu.edu.sg/
 date: 08-15-2021
 output:
@@ -16,8 +17,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+# Project Submission
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
 
 
