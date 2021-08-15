@@ -1,0 +1,104 @@
+[
+  {
+    "path": "posts/2021-08-15-project-poster/",
+    "title": "Project Poster",
+    "description": "Poster for the project work for this course.",
+    "author": [
+      {
+        "name": "Wang Xiyu, Tang Huining",
+        "url": "https://scis.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-08-15",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-08-16T00:09:30+08:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-08-15-project-proposal/",
+    "title": "Project Proposal",
+    "description": "The title of our Project is \"Visual analytics of GPS tracks: From Consumption to Relationship to Suspect Activity\". We aims to get abnormal personal relationships based on the trajectory of all employees’ actions and consumption before the employees disappeared, so as to determine whether these people are related to the missing employees.We also hope to combine the relationship and gps traacks to get abnormal location so that we could estimate if something worth investigate at that place. Our application will inculding 4 parts, in each part we would gradually analyze the caracteristics of consumption and gps track and relationship. We hope to get abnormal location through all interactive graph.",
+    "author": [
+      {
+        "name": "Wang Xiyu, Tang Huining",
+        "url": "https://scis.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-08-15",
+    "categories": [],
+    "contents": "\r\nMotivation\r\nThe driving record of the suspect has always been an important clue to most criminal cases. Through the analysis of the movement of individual people, we can find the suspect’s regular route and regular schedule which is the key in understanding patterns of their movements. Taking the GPS monitoring results of the company’s employees as a whole can help us understand whether the company has organized group activities at a specific time, such as company team building or overtime, which leads to unexpected group behavior. This helps the police find out the suspect’s unusual travel time and destination. As for the credit card and loyalty card consumption records can help us find out whether the suspect has suspiciously large expenditures, and investigate whether it is possible to purchase suspicious items as criminal tools of crime through the location and name of business of the purchased items.\r\nProblem Statement\r\nExplore relations among department, job title, travel time, main travel routes, and spending locations and amounts. Explore spatial and time biases among department and job title, and similarities in traffic pattern and expenditure pattern. Incorporate time series into consideration, build interactive visualizations to present traffic flow and traffic volume. Further investigate the destination of travel and expenditure to derive insights about whether there is suspicious consumer behavior.\r\nSolution\r\nTo reveal the intuitive net work pattern, we will mainly use the ggraph package from R, which provides an flexible extension on the well-acclaimed ggplot2 package in R. In addition to providing the traffic flow between the various landmark nodes in the picture, we will also show the density of traffic, and provide users with visual detailed information through an interactive design.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-08-15T18:16:30+08:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-08-15-project-research-paper/",
+    "title": "Project Research Paper",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Wang Xiyu, Tang Huining",
+        "url": "https://scis.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-08-15",
+    "categories": [],
+    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-08-15T00:36:37+08:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-08-15-project-shiny-application/",
+    "title": "Project Shiny Application",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Wang Xiyu, Tang Huining",
+        "url": "https://scis.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-08-15",
+    "categories": [],
+    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-08-15T00:37:51+08:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-08-15-project-submission-mini-challenge-2/",
+    "title": "Project Submission Mini-Challenge 2",
+    "description": "Submission for the project work for this course.",
+    "author": [
+      {
+        "name": "Wang Xiyu, Tang Huining",
+        "url": "https://scis.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-08-15",
+    "categories": [],
+    "contents": "\r\nProject Submission\r\nProject Proposal\r\nProject Poster\r\nShiny Application\r\nUser Guide for the Shiny Application\r\nProject Research Paper\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-08-15T18:14:32+08:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-08-15-project-user-guide/",
+    "title": "Project User Guide",
+    "description": "User Guide for the Shiny application.",
+    "author": [
+      {
+        "name": "Wang Xiyu, Tang Huining",
+        "url": "https://scis.smu.edu.sg/"
+      }
+    ],
+    "date": "2021-08-15",
+    "categories": [],
+    "contents": "\r\n\r\nContents\r\nUser Guide\r\n1. Location & Consumption\r\n2. GPS Tracking\r\n3. Credit & Loyalty Card Ownership\r\n\r\n\r\nUser Guide\r\nThis document gives a short description of our R Shiny Application and an overview of the application layout.\r\n1. Location & Consumption\r\nThe interface of the first session is divided into two parts. The two graphs on the left-hand side are a bar graph showing the frequency of purchases in each store and a scatter plot showing every single transaction amount in each store. At the upper left corner of the panel, user can select credit card, loyalty card, or both showing at the same time.\r\n\r\nAs for the mosaic chart on the right-hand side, users can select the store name in the drop-down list at the top of the panel, or select ‘all’, so that to show the patronized situation all shops as a whole.\r\n\r\n2. GPS Tracking\r\nThe graph in the lower left corner shows all the driving path records in the two weeks before the incident, in which the thickness of the red line greatly reflects the popularity of the places. After selecting the suspect’s name and his/her travel date in the upper left corner of the interface, user can see that the map on the right will change accordingly.\r\n\r\n3. Credit & Loyalty Card Ownership\r\nUtilizing the time variables of transaction data and gps data to identify which vehicles stayed at a specific merchant at a specific time, we can generate a list including all associations of card numbers and consumers. The combinations that appear frequently in multiple lists, that is, the association with the highest frequency, can be preliminarily determined as the ownership between the card and the consumer.\r\nAt the top of the panel on the right, users can select the name of the suspect, and the bar chart below can correspondingly display the cards that may be identified as the suspect’s and their corresponding frequency.\r\n\r\n\r\nThe left side of the interface displays the complete list of employees, the end numbers of membership cards and credit cards that most likely to be determined as their cards, and the frequency of the association appearing.\r\n\r\nThe dropdown list in the upper left corner enables the users to select the name of the suspect to be investigated. After selecting the target task, you can see that the personnel nodes and connections in the relationship network diagram that have nothing to do with the personnel will be grayed out, and only those with potential relationships will be remained.\r\n\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-08-16T00:31:55+08:00",
+    "input_file": {}
+  }
+]
