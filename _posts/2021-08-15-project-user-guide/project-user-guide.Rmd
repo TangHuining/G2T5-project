@@ -49,6 +49,9 @@ At the top of the panel on the right, users can select the name of the suspect, 
 
 The left side of the interface displays the complete list of employees, the end numbers of membership cards and credit cards that most likely to be determined as their cards, and the frequency of the association appearing.
 
+## 4. Relationship
+
+Each node in the relationship graph represents an employee, and nodes are given diverse colors to help users distinguish their job category.
 ![](img/6.png){width=90%}
 
 The dropdown list in the upper left corner enables the users to select the name of the suspect to be investigated. After selecting the target task, you can see that the personnel nodes and connections in the relationship network diagram that have nothing to do with the personnel will be grayed out, and only those with potential relationships will be remained.

@@ -105,7 +105,7 @@ Because both the consumption data of the cards and the driving record data have 
 ![](pic/Picture12.png){width=40%}   
 ![](pic/Picture13.png){width=40%}   
 However, this method will have some limitations, because we use the dispatching relationship of the car as a medium to determine the relationship between the cards and the consumers. In fact, unexpected situations are likely to occur, for example, people use cards other than their own to make a transaction, or someone drives someone else’s car to spend at the merchant.  
-![](pic/Picture14.png) {width=60%}  
+![](pic/Picture14.png){width=60%}  
 
 ### 5.3 Potential suspicious location, activities and relationship  
 We can use timestamp and location indicator of transaction data to group card numbers to find out which cards are used for consumption at the same merchant at the same time.Through this result, we can utilize the result of the previous question to find the owners of the cards in a one-to-one correspondence. People in the same timestamp-location group may have had contact, which enables the police to infer potential relationships.
