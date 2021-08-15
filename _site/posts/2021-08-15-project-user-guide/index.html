@@ -112,12 +112,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Project User Guide"]},{"type":"character","attributes":{},"value":["User Guide for the Shiny application."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Wang Xiyu, Tang Huining"]},{"type":"character","attributes":{},"value":["https://scis.smu.edu.sg/"]}]}]},{"type":"character","attributes":{},"value":["08-15-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Project User Guide"]},{"type":"character","attributes":{},"value":["User Guide for the Shiny application."]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Wang Xiyu, Tang Huining"]},{"type":"character","attributes":{},"value":["https://scis.smu.edu.sg/"]}]}]},{"type":"character","attributes":{},"value":["08-15-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["project-user-guide_files/anchor-4.2.2/anchor.min.js","project-user-guide_files/bowser-1.9.3/bowser.min.js","project-user-guide_files/distill-2.2.21/template.v2.js","project-user-guide_files/header-attrs-2.9/header-attrs.js","project-user-guide_files/jquery-1.11.3/jquery.min.js","project-user-guide_files/popper-2.6.0/popper.min.js","project-user-guide_files/tippy-6.2.7/tippy-bundle.umd.min.js","project-user-guide_files/tippy-6.2.7/tippy-light-border.css","project-user-guide_files/tippy-6.2.7/tippy.css","project-user-guide_files/tippy-6.2.7/tippy.umd.min.js","project-user-guide_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["img/1.png","img/2.png","img/3.png","img/4.png","img/5.png","img/6.png","img/7.png","project-user-guide_files/anchor-4.2.2/anchor.min.js","project-user-guide_files/bowser-1.9.3/bowser.min.js","project-user-guide_files/distill-2.2.21/template.v2.js","project-user-guide_files/header-attrs-2.9/header-attrs.js","project-user-guide_files/jquery-1.11.3/jquery.min.js","project-user-guide_files/popper-2.6.0/popper.min.js","project-user-guide_files/tippy-6.2.7/tippy-bundle.umd.min.js","project-user-guide_files/tippy-6.2.7/tippy-light-border.css","project-user-guide_files/tippy-6.2.7/tippy.css","project-user-guide_files/tippy-6.2.7/tippy.umd.min.js","project-user-guide_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2098,6 +2098,38 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#user-guide">User Guide</a>
+<ul>
+<li><a href="#location-consumption">1. Location &amp; Consumption</a></li>
+<li><a href="#gps-tracking">2. GPS Tracking</a></li>
+<li><a href="#credit-loyalty-card-ownership">3. Credit &amp; Loyalty Card Ownership</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<h1 id="user-guide">User Guide</h1>
+<p>This document gives a short description of our R Shiny Application and an overview of the application layout.</p>
+<h2 id="location-consumption">1. Location &amp; Consumption</h2>
+<p>The interface of the first session is divided into two parts. The two graphs on the left-hand side are a bar graph showing the frequency of purchases in each store and a scatter plot showing every single transaction amount in each store. At the upper left corner of the panel, user can select credit card, loyalty card, or both showing at the same time.</p>
+<p><img src="img/1.png" style="width:90.0%" /></p>
+<p>As for the mosaic chart on the right-hand side, users can select the store name in the drop-down list at the top of the panel, or select ‘all’, so that to show the patronized situation all shops as a whole.</p>
+<p><img src="img/2.png" style="width:90.0%" /></p>
+<h2 id="gps-tracking">2. GPS Tracking</h2>
+<p>The graph in the lower left corner shows all the driving path records in the two weeks before the incident, in which the thickness of the red line greatly reflects the popularity of the places. After selecting the suspect’s name and his/her travel date in the upper left corner of the interface, user can see that the map on the right will change accordingly.</p>
+<p><img src="img/3.png" style="width:90.0%" /></p>
+<h2 id="credit-loyalty-card-ownership">3. Credit &amp; Loyalty Card Ownership</h2>
+<p>Utilizing the time variables of transaction data and gps data to identify which vehicles stayed at a specific merchant at a specific time, we can generate a list including all associations of card numbers and consumers. The combinations that appear frequently in multiple lists, that is, the association with the highest frequency, can be preliminarily determined as the ownership between the card and the consumer.</p>
+<p>At the top of the panel on the right, users can select the name of the suspect, and the bar chart below can correspondingly display the cards that may be identified as the suspect’s and their corresponding frequency.</p>
+<p><img src="img/4.png" style="width:50.0%" /></p>
+<p><img src="img/5.png" style="width:50.0%" /></p>
+<p>The left side of the interface displays the complete list of employees, the end numbers of membership cards and credit cards that most likely to be determined as their cards, and the frequency of the association appearing.</p>
+<p><img src="img/6.png" style="width:90.0%" /></p>
+<p>The dropdown list in the upper left corner enables the users to select the name of the suspect to be investigated. After selecting the target task, you can see that the personnel nodes and connections in the relationship network diagram that have nothing to do with the personnel will be grayed out, and only those with potential relationships will be remained.</p>
+<p><img src="img/7.png" style="width:90.0%" /></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
