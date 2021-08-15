@@ -19,5 +19,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Project Submission
 
+1. [Project Proposal](https://project-g2t5.netlify.app/posts/2021-08-15-project-proposal/)
 
+2. [Project Poster](https://project-g2t5.netlify.app/posts/2021-08-15-project-poster/)
+
+3. [Shiny Application](https://jasminewang0726.shinyapps.io/MiniChallenge/?_ga=2.162324028.1250284060.1628951342-1944787584.1628951342)
+
+4. [User Guide for the Shiny Application](https://project-g2t5.netlify.app/posts/2021-08-15-project-user-guide/)
+
+5. [Project Research Paper](https://project-g2t5.netlify.app/posts/2021-08-15-project-research-paper/)
 

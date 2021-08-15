@@ -1,7 +1,7 @@
 ---
 title: "Project Research Paper"
 description: |
-  A short description of the post.
+  Research paper for the project work for this course.
 author:
   - name: Wang Xiyu, Tang Huining
     url: https://scis.smu.edu.sg/
@@ -15,9 +15,5 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-
-Distill is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Distill at <https://rstudio.github.io/distill>.
 
 

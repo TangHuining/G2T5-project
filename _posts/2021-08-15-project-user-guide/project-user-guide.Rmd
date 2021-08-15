@@ -1,7 +1,7 @@
 ---
 title: "Project User Guide"
 description: |
-  A short description of the post.
+  User Guide for the Shiny application.
 author:
   - name: Wang Xiyu, Tang Huining
     url: https://scis.smu.edu.sg/
@@ -16,8 +16,6 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
 
 

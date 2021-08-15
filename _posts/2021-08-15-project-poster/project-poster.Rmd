@@ -1,7 +1,7 @@
 ---
 title: "Project Poster"
 description: |
-  A short description of the post.
+  Poster for the project work for this course.
 author:
   - name: Wang Xiyu, Tang Huining
     url: https://scis.smu.edu.sg/
